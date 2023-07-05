@@ -219,14 +219,14 @@ These differences in Sensitivity/Specificity scores highlight the variations in 
 
 \begin{figure}[h]
 %\centering
-\hspace*{1cm}
-\begin{minipage}[b]{0.7\textwidth}
+\hspace*{0cm}
+\begin{minipage}[b]{0.8\textwidth}
   % Sensitivity/Specificity-Diagramm
   \begin{tikzpicture}
     \begin{axis}[
         ybar,
         width=0.6\textwidth,
-        height=0.3\textwidth,
+        height=0.4\textwidth,
         ylabel=Scores,
         symbolic x coords={Logistic Regression, Decision Tree, Random Forest, Neural Network, AdaBoost},
         xtick=data,
@@ -259,7 +259,7 @@ These differences in Sensitivity/Specificity scores highlight the variations in 
       };
       \legend{TNR, TPR}
     \end{axis}
-    \node at (current bounding box.north) [above=1ex, font=\footnotesize\bfseries] {Model Comparison - Sensitivity/Specificity};
+    \node at (current bounding box.north) [above=1ex, font=\bfseries] {Model Comparison - Sensitivity/Specificity};
   \end{tikzpicture}
 
 \end{minipage}
