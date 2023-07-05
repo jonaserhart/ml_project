@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.9)  5 JUL 2023 15:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.9)  5 JUL 2023 15:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -894,43 +894,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ./report.tex:123: Undefined control sequence.
-l.123 	\textbfn
-                The hyperparameters for each algorithm are chosen using grid...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./report.tex:126: Undefined control sequence.
-l.126 	\textbfn
-                For the final model, the best hyperparameters obtained from ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 1
-29.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 129.
-
-./report.tex:145: Undefined control sequence.
-l.145 	\textbfn
-                These hyperparameters are chosen based on their performance ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./report.tex:147: Undefined control sequence.
-l.147 	\textbfnIt
-                  is important to note that the provided script does not cov...
+l.123 	\textbfnIt
+                  Is important to note that the provided script does not cov...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -938,67 +903,58 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./report.tex:148: LaTeX Error: Something's wrong--perhaps a missing \item.
+./report.tex:124: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.148 \end{itemize}
+l.124 \end{itemize}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./report.tex:154: Package xcolor Error: Undefined color `Black'.
+./report.tex:130: Package xcolor Error: Undefined color `Black'.
 
 See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.154 {\color{Black}
+l.130 {\color{Black}
                     
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./report.tex:157: LaTeX Error: Can be used only in preamble.
+./report.tex:133: LaTeX Error: Can be used only in preamble.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.157 \documentclass
+l.133 \documentclass
                     {\newline}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./report.tex:157: LaTeX Error: There's no line here to end.
+./report.tex:133: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.157 \documentclass{\newline
+l.133 \documentclass{\newline
                              }
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./report.tex:158: Undefined control sequence.
-l.158 \textbfIn
-                In the diagrams, different models are compared, including Lo...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./report.tex:160: Undefined control sequence.
-l.160 \textbfIn
-                The first diagram, the accuracy of the models is presented. ...
+./report.tex:134: Undefined control sequence.
+l.134 \textbfIn
+                The diagram compares the accuracy of different models, inclu...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1006,47 +962,43 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./report.tex:167: LaTeX Error: Something's wrong--perhaps a missing \item.
+./report.tex:134: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.167 \end{itemize}
-                   
+l.134 ... model for the task at hand.\end{itemize}
+                                                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 195.
+(Font)              <8> on input line 162.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 195.
+(Font)              <6> on input line 162.
 
-Overfull \hbox (4.29683pt too wide) in paragraph at lines 197--198
+Overfull \hbox (4.29683pt too wide) in paragraph at lines 164--165
  [][] 
  []
 
 
-./report.tex:198: LaTeX Error: There's no line here to end.
+./report.tex:165: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.198   \caption{Accuracy-Diagramms} \newline
+l.165   \caption{Accuracy-Diagramms} \newline
                                              
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./report.tex:201: Undefined control sequence.
+./report.tex:168: Undefined control sequence.
 <recently read> \textbfn 
                          
-l.201   \textbfn
+l.168   \textbfn
                  The second diagram, the ROC (Receiver Operating Characteris...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1055,26 +1007,29 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./report.tex:206: LaTeX Error: Something's wrong--perhaps a missing \item.
+./report.tex:173: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.206 \end{itemize}
+l.173 \end{itemize}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+[1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-Overfull \hbox (3.54277pt too wide) in paragraph at lines 239--240
+
+]
+Overfull \hbox (3.54277pt too wide) in paragraph at lines 206--207
  [][] 
  []
 
-./report.tex:243: Undefined control sequence.
+./report.tex:210: Undefined control sequence.
 <recently read> \textbfIn 
                           
-l.243   \textbfIn
+l.210   \textbfIn
                   In the third diagram, the Sensitivity/Specificity scores o...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1083,26 +1038,29 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./report.tex:249: LaTeX Error: Something's wrong--perhaps a missing \item.
+./report.tex:216: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.249 \end{itemize}
+l.216 \end{itemize}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (139.15604pt too wide) in paragraph at lines 255--299
+Overfull \hbox (139.15604pt too wide) in paragraph at lines 222--266
 []|  [] 
  []
 
-./report.tex:312: Undefined control sequence.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+./report.tex:279: Undefined control sequence.
 <recently read> \textbfn 
                          
-l.312 	\textbfn
+l.279 	\textbfn
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1110,29 +1068,28 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[2]
-LaTeX Font Info:    Trying to load font information for OML+ptm on input line 3
-14.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omlptm.fd
+LaTeX Font Info:    Trying to load font information for OML+ptm on input line 2
+81.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omlptm.fd
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 314.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 281.
 
 
-./report.tex:317: LaTeX Error: Something's wrong--perhaps a missing \item.
+./report.tex:284: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.317 \end{itemize}
+l.284 \end{itemize}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./report.tex:327: Undefined control sequence.
-l.327 \textbfn
+./report.tex:294: Undefined control sequence.
+l.294 \textbfn
                The main takeaway from this project for us is that the main w...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1141,13 +1098,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./report.tex:328: LaTeX Error: Something's wrong--perhaps a missing \item.
+./report.tex:295: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.328   \end{itemize}
+l.295   \end{itemize}
                      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1163,34 +1120,28 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the US letter (8.5in X 11in) paper size.
 
-[3
-
-] (./report.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[2] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 29404 strings out of 478268
- 788247 string characters out of 5846347
- 1236424 words of memory out of 5000000
- 47210 multiletter control sequences out of 15000+600000
+ 29383 strings out of 478268
+ 787876 string characters out of 5846347
+ 1225382 words of memory out of 5000000
+ 47192 multiletter control sequences out of 15000+600000
  499353 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,21n,104p,823b,2345s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
-e/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
-022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/
-texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist
-/fonts/type1/urw/times/utmr8a.pfb>
-Output written on report.pdf (3 pages, 96189 bytes).
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r
+.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pf
+b></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
+local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
+ocal/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texli
+ve/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on report.pdf (2 pages, 94694 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

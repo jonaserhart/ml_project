@@ -120,31 +120,7 @@ Matrikel Nr.:	11906555           \\  % Enter Matrikel number
 
 	\textbfn The chosen algorithm family for this problem is ensemble methods, which includes Decision Trees, Random Forests, and AdaBoost. Ensemble methods combine multiple weak models to create a stronger model with improved generalization and robustness. These algorithms are suitable for this problem because they can handle complex relationships in the data and have the ability to learn from imbalanced datasets.\\
 
-	\textbfn The hyperparameters for each algorithm are chosen using grid search with cross-validation. \\ This approach 
-	systematically tests different combinations of hyperparameters and selects the best performing set. The evaluation metric used for hyperparameter selection is ROC AUC (Receiver Operating Characteristic Area Under the Curve), which is a common metric for imbalanced classification problems.\\
-
-	\textbfn For the final model, the best hyperparameters obtained from grid search are used. The hyperparameters are as follows:
-
-\hspace*{0.5cm}Logistic Regression:\newline
-\hspace*{1cm}C = 0.1,\\ \hspace*{1cm}class\_weight = \{0: 0.1, 1: 0.9\}\newline
-\hspace*{0.5cm}Decision Tree:\newline
-\hspace*{1cm}max\_depth = 15,\newline
-\hspace*{1cm}class\_weight = 'balanced'\newline
-\hspace*{0.5cm}Random Forest:\newline
-\hspace*{1cm}n\_estimators = 100,\newline
-\hspace*{1cm}max\_features = 'sqrt',\newline
-\hspace*{1cm}class\_weight = 'balanced'\newline
-\hspace*{0.5cm}Multilayer Perceptron:\newline
-\hspace*{1cm}hidden\_layer\_sizes = (50, 50),\newline
-\hspace*{1cm}activation = 'relu',\newline
-\hspace*{1cm}alpha = 0.0001\newline
-\hspace*{0.5cm}AdaBoost:\newline
-\hspace*{1cm}n\_estimators = 100,\newline
-\hspace*{1cm}estimator =DecisionTreeClassifier(max\_depth=4)\\
-
-	\textbfn These hyperparameters are chosen based on their performance in terms of ROC AUC and accuracy scores on the testing data. The final models are trained using these hyperparameters.\\
-
-	\textbfnIt is important to note that the provided script does not cover the entire data preprocessing and feature engineering pipeline. It assumes that the data is already preprocessed and ready for model training. In a real-world scenario, additional steps such as data cleaning, feature scaling, and feature selection may be required before training the models. 
+	\textbfnIt Is important to note that the provided script does not cover the entire data preprocessing and feature engineering pipeline. It assumes that the data is already preprocessed and ready for model training. In a real-world scenario, additional steps such as data cleaning, feature scaling, and feature selection may be required before training the models. 
 \end{itemize}
 }
 
@@ -155,16 +131,7 @@ Matrikel Nr.:	11906555           \\  % Enter Matrikel number
 
 \begin{itemize}
 \documentclass{\newline}
-\textbfIn In the diagrams, different models are compared, including Logistic Regression, Decision Tree, Random Forest, Neural Network, and AdaBoost. The evaluation is based on the metrics of Accuracy, ROC, and Sensitivity/Specificity. \newline
-
-\textbfIn The first diagram, the accuracy of the models is presented. The accuracy metric measures how well the models are able to make correct predictions. The diagram compares the accuracy of different models, including Logistic Regression, Decision Tree, Random Forest, Neural Network, and AdaBoost.
-
-The accuracy values indicate the percentage of correct predictions made by each model. In this diagram, the Random Forest model achieves the highest accuracy, followed by the Decision Tree and AdaBoost. The Logistic Regression and Neural Network models show slightly lower accuracy values.
-
-These differences in accuracy could be attributed to various factors, such as the complexity of the models, the quality of the data, or the chosen hyperparameters.
-
-The accuracy diagram provides an overview of the model performance in terms of accuracy and helps in selecting the best model for the task at hand.
-\end{itemize}
+\textbfIn The diagram compares the accuracy of different models, including Logistic Regression, Decision Tree, Random Forest, Neural Network, and AdaBoost. The accuracy metric measures how well the models are able to make correct predictions. The diagram shows that the Random Forest model achieves the highest accuracy, followed by the Decision Tree and AdaBoost. Logistic Regression and Neural Network models have slightly lower accuracy values. These differences in accuracy could be attributed to factors such as the complexity of the models, data quality, or chosen hyperparameters. The accuracy diagram provides an overview of model performance in terms of accuracy and helps in selecting the best model for the task at hand.\end{itemize}
 %\begin{document}
 \begin{figure}[h]
   \centering
