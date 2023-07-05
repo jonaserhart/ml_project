@@ -110,19 +110,20 @@ Matrikel Nr.:	11906555           \\  % Enter Matrikel number
 
 {\color{black}
 
-\begin{itemize} \textbfn
-	\item The given dataset consists of transaction data with a binary classification task of identifying fraud transactions. Before selecting a model, it is important to analyze the data and address any issues, such as class imbalance.
+\begin{itemize} 
+	%\item 
+	\textbfn The given dataset consists of transaction data with a binary classification task of identifying fraud transactions. Before selecting a model, it is important to analyze the data and address any issues, such as class imbalance.\newline
 
-	\item The dataset is highly imbalanced, with a majority of legitimate transactions (Class 0) and a minority of fraud transactions (Class 1). To balance the dataset, the "Class 1" samples can be oversampled using the resample function from scikit-learn. This creates a new dataset with an equal number of samples for both classes. The balanced dataset is then used for training the models.
+	\textbfn The dataset is highly imbalanced, with a majority of legitimate transactions (Class 0) and a minority of fraud transactions (Class 1). To balance the dataset, the "Class 1" samples can be oversampled using the resample function from scikit-learn. This creates a new dataset with an equal number of samples for both classes. The balanced dataset is then used for training the models.\newline
 
-	\item After balancing the dataset, we can proceed with selecting a suitable model. The script provides options for different algorithms, including Logistic Regression, Decision Trees, Random Forests, Multilayer Perceptron (Neural Network), and AdaBoost. Each algorithm is defined with its corresponding hyperparameter search space.
+	\textbfn After balancing the dataset, we can proceed with selecting a suitable model. The script provides options for different algorithms, including Logistic Regression, Decision Trees, Random Forests, Multilayer Perceptron (Neural Network), and AdaBoost. Each algorithm is defined with its corresponding hyperparameter search space.\\
 
-	\item The chosen algorithm family for this problem is ensemble methods, which includes Decision Trees, Random Forests, and AdaBoost. Ensemble methods combine multiple weak models to create a stronger model with improved generalization and robustness. These algorithms are suitable for this problem because they can handle complex relationships in the data and have the ability to learn from imbalanced datasets.
+	\textbfn The chosen algorithm family for this problem is ensemble methods, which includes Decision Trees, Random Forests, and AdaBoost. Ensemble methods combine multiple weak models to create a stronger model with improved generalization and robustness. These algorithms are suitable for this problem because they can handle complex relationships in the data and have the ability to learn from imbalanced datasets.\\
 
-	\item The hyperparameters for each algorithm are chosen using grid search with cross-validation. \\[1em] This approach 
-	systematically tests different combinations of hyperparameters and selects the best performing set. The evaluation metric used for hyperparameter selection is ROC AUC (Receiver Operating Characteristic Area Under the Curve), which is a common metric for imbalanced classification problems.
+	\textbfn The hyperparameters for each algorithm are chosen using grid search with cross-validation. \\ This approach 
+	systematically tests different combinations of hyperparameters and selects the best performing set. The evaluation metric used for hyperparameter selection is ROC AUC (Receiver Operating Characteristic Area Under the Curve), which is a common metric for imbalanced classification problems.\\
 
-	\item For the final model, the best hyperparameters obtained from grid search are used. The hyperparameters are as follows:
+	\textbfn For the final model, the best hyperparameters obtained from grid search are used. The hyperparameters are as follows:
 
 \hspace*{0.5cm}Logistic Regression:\newline
 \hspace*{1cm}C = 0.1,\\ \hspace*{1cm}class\_weight = \{0: 0.1, 1: 0.9\}\newline
@@ -139,11 +140,11 @@ Matrikel Nr.:	11906555           \\  % Enter Matrikel number
 \hspace*{1cm}alpha = 0.0001\newline
 \hspace*{0.5cm}AdaBoost:\newline
 \hspace*{1cm}n\_estimators = 100,\newline
-\hspace*{1cm}estimator =DecisionTreeClassifier(max\_depth=4)
+\hspace*{1cm}estimator =DecisionTreeClassifier(max\_depth=4)\\
 
-	\item These hyperparameters are chosen based on their performance in terms of ROC AUC and accuracy scores on the testing data. The final models are trained using these hyperparameters.
+	\textbfn These hyperparameters are chosen based on their performance in terms of ROC AUC and accuracy scores on the testing data. The final models are trained using these hyperparameters.\\
 
-	\item It is important to note that the provided script does not cover the entire data preprocessing and feature engineering pipeline. It assumes that the data is already preprocessed and ready for model training. In a real-world scenario, additional steps such as data cleaning, feature scaling, and feature selection may be required before training the models. 
+	\textbfnIt is important to note that the provided script does not cover the entire data preprocessing and feature engineering pipeline. It assumes that the data is already preprocessed and ready for model training. In a real-world scenario, additional steps such as data cleaning, feature scaling, and feature selection may be required before training the models. 
 \end{itemize}
 }
 
