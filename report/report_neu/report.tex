@@ -26,6 +26,9 @@
 \usepackage{cuted,tcolorbox,lipsum}
 \usepackage{xcolor}
 \usepackage{pgfplots}
+\usepackage{textcomp}
+\usepackage{siunitx}
+
 
 \title{\LARGE \bf
 Introduction to Machine Learning (SS 2023)\\ Programming Project
@@ -51,20 +54,21 @@ size=tight,
 colback=white,
 boxrule=0.2mm,
 left=3mm,right=3mm, top=3mm, bottom=1mm
+%width=\dimexpr\linewidth1cm\relax % Hier die Breite anpassen
 ]
 {\begin{multicols}{3}% replace 3 with 2 for 2 authors.
 
 \textbf{Author 1}       \\
-Last name:              \\  % Enter first name
-First name:             \\  % Enter first name
-Matrikel Nr.:               \\  % Enter Matrikel number
+Last name:	Erhart            \\  % Enter first name
+First name:	Jonas           \\  % Enter first name
+Matrikel Nr.: 	11906977             \\  % Enter Matrikel number
 
 \columnbreak
 
 \textbf{Author 2}       \\ 
-Last name:  Untermann            \\  % Enter first name
-First name:   Sven          \\  % Enter first name
-Matrikel Nr.:   11906555           \\  % Enter Matrikel number
+Last name:	Untermann            \\  % Enter first name
+First name:	Sven          \\  % Enter first name
+Matrikel Nr.:	11906555           \\  % Enter Matrikel number
 
 \columnbreak
 
@@ -115,7 +119,7 @@ Matrikel Nr.:   11906555           \\  % Enter Matrikel number
 
 	\item The chosen algorithm family for this problem is ensemble methods, which includes Decision Trees, Random Forests, and AdaBoost. Ensemble methods combine multiple weak models to create a stronger model with improved generalization and robustness. These algorithms are suitable for this problem because they can handle complex relationships in the data and have the ability to learn from imbalanced datasets.
 
-	\item The hyperparameters for each algorithm are chosen using grid search with cross-validation.\\ \\[1em] This approach 
+	\item The hyperparameters for each algorithm are chosen using grid search with cross-validation. \\[1em] This approach 
 	systematically tests different combinations of hyperparameters and selects the best performing set. The evaluation metric used for hyperparameter selection is ROC AUC (Receiver Operating Characteristic Area Under the Curve), which is a common metric for imbalanced classification problems.
 
 	\item For the final model, the best hyperparameters obtained from grid search are used. The hyperparameters are as follows:
@@ -139,7 +143,7 @@ Matrikel Nr.:   11906555           \\  % Enter Matrikel number
 
 	\item These hyperparameters are chosen based on their performance in terms of ROC AUC and accuracy scores on the testing data. The final models are trained using these hyperparameters.
 
-	\item It is important to note that the provided script does not cover the entire data preprocessing and feature engineering pipeline. It assumes that the data is already preprocessed and ready for model training. In a real-world scenario, additional steps such as data cleaning, feature scaling, and feature selection may be required before training the models. \newline \newline
+	\item It is important to note that the provided script does not cover the entire data preprocessing and feature engineering pipeline. It assumes that the data is already preprocessed and ready for model training. In a real-world scenario, additional steps such as data cleaning, feature scaling, and feature selection may be required before training the models. 
 \end{itemize}
 }
 
@@ -243,23 +247,33 @@ These differences in Sensitivity/Specificity scores highlight the variations in 
 %The ROC diagram (Figure 2) compares the ROC curve of the different models. It shows that all models have a very high AUC (Area Under the Curve), with the Random Forest model achieving the best performance with an AUC of 1.0. 
 \end{itemize}
 
+
+
 \begin{figure}[h]
-\centering
+%\centering
+\hspace*{1cm}
+\begin{minipage}[b]{0.7\textwidth}
   % Sensitivity/Specificity-Diagramm
   \begin{tikzpicture}
     \begin{axis}[
         ybar,
-        width=0.5\textwidth,
+        width=0.6\textwidth,
         height=0.3\textwidth,
         ylabel=Scores,
         symbolic x coords={Logistic Regression, Decision Tree, Random Forest, Neural Network, AdaBoost},
         xtick=data,
-        xticklabel style={rotate=45, anchor=north east}, % Schrift auf x-Achse schräg
+        xticklabel style={rotate=45, anchor=north east},
         nodes near coords,
         nodes near coords align={vertical},
+        nodes near coords style={
+          font=\footnotesize,
+          rotate=90,
+          anchor=west,
+          yshift=-2pt
+          },
         ymin=0, ymax=100,
-        bar width=12pt,
-        font=\footnotesize % Manuell Schriftgröße anpassen
+        bar width=10pt,
+        font=\scriptsize
       ]
       \addplot coordinates {
         (Logistic Regression,71.30)
@@ -277,21 +291,26 @@ These differences in Sensitivity/Specificity scores highlight the variations in 
       };
       \legend{TNR, TPR}
     \end{axis}
-    \node at (current bounding box.north) [above=1ex, font=\bfseries] {Model Comparison - Sensitivity/Specificity};
+    \node at (current bounding box.north) [above=1ex, font=\footnotesize\bfseries] {Model Comparison - Sensitivity/Specificity};
   \end{tikzpicture}
-  \caption{ Sensitivity/Specificity-Diagramms}
- \end{figure} 
+
+\end{minipage}
+\caption{Sensitivity/Specificity-Diagramm}
+%\end {center}
+\end{figure}
+
+
 %\end{document}
 }
 
 \section{Discussion}
 \label{sec:discuss}
-
-{\color{blue}
+\sisetup{output-decimal-marker={\textasciitilde}}
+{\color{black}
 \begin{itemize}
 	\textbfn 
-	The performance of our model (~95\% roc auc score on unseen data) is attributed to the AdaBoost algorithm which uses Boosting to train 	weak learners. This in combination with some data preprocessing is very effective for developing a decision tree classifier using our 			imbalanced dataset. 
-	The idea of using an ensemble algorithm to extend a classifier arose when a test using a decision tree classifier lead to an overfit model. 		This overfit model worked very well on seen data (99\% roc auc score) and poorly (< 80\%) on unseen data. Random forests normally 		mitigate this problem but since we were given an extremely imbalanced dataset the roc auc score was not too god either on the provided 		testing dataset. We discovered that a boosting ensemble worked best to mitigate the imbalanced dataset problem.			The results 	yielded by this model are acceptable and could even be improved by exploring more parameter values using grid search. This would require 	more time to find out what parameters work best for this model.
+	The performance of our model (\(\sim\)\num{95}\% roc auc score on unseen data) is attributed to the AdaBoost algorithm which uses Boosting to train 	weak learners. This in combination with some data preprocessing is very effective for developing a decision tree classifier using our 			imbalanced dataset. 
+	The idea of using an ensemble algorithm to extend a classifier arose when a test using a decision tree classifier lead to an overfit model. 		This overfit model worked very well on seen data (99\% roc auc score) and poorly (\textless 80\%) on unseen data. Random forests normally 		mitigate this problem but since we were given an extremely imbalanced dataset the roc auc score was not too god either on the provided 		testing dataset. We discovered that a boosting ensemble worked best to mitigate the imbalanced dataset problem.			The results 	yielded by this model are acceptable and could even be improved by exploring more parameter values using grid search. This would require 	more time to find out what parameters work best for this model.
 
 
 \end{itemize}
@@ -304,9 +323,7 @@ These differences in Sensitivity/Specificity scores highlight the variations in 
 
   \begin{itemize}
   The performance of our model given the testing dataset was about 95\% in terms of the roc auc score.\newline
-\textbfn CONCLUSION:
-
-The main takeaway from this project for us is that the main work in machine learning is to find a model and the optimal parameters for it. The more time spent on planning what model to use and the knowledge of which parameters to tweak can save hours of time in this small project. In a bigger, real world problem, enough thought before even touching some code could even save multiple days worth of time.
+\textbfn The main takeaway from this project for us is that the main work in machine learning is to find a model and the optimal parameters for it. The more time spent on planning what model to use and the knowledge of which parameters to tweak can save hours of time in this small project. In a bigger, real world problem, enough thought before even touching some code could even save multiple days worth of time.
   \end{itemize}
 
 }
